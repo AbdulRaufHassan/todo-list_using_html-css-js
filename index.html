@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js">
+    <link rel="shortcut icon" href="images_and_fonts/images/fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bodyOverlay"></div>
+    <div class="mainDiv">
+        <h1>Todo List</h1>
+        <div class="inputFieldParent">
+            <input type="text" id="inputField" placeholder="Enter your todo here...">
+            <button id="addBtn" onclick="addTask()">Add</button>
+            <button id="saveNewName">Save change</button>
+        </div>
+        <div class="ParentDivData">
+            <p id="countCompleteTask"></p>
+            <div id="userTasks">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
